@@ -6,12 +6,7 @@
     --white: #FFFFFF;
     --grey-bg: #F8F8F8;
     --grey-text: #9F9F9F;
-
-
 }
-
-
-
 
 .body {
     font-family: Lato;
@@ -25,7 +20,6 @@
     width: 1138px;
     margin: 0 auto;
 }
-
 
 .visually-hidden {
     position: absolute;
@@ -68,8 +62,6 @@
     margin: 0 34px 0 0;
 }
 
-
-
 .brand {
     display: flex;
     margin: 0 0 63px;
@@ -102,7 +94,6 @@
     font-weight: 700;
     line-height: 38px;
 }
-
 
 .brand__subtitle-pink {
     color: var(--dark-pink);
@@ -160,8 +151,6 @@
     width: 100%;
     margin: 0;
     background-image: url(./img/accesories.png);
-
-
 }
 
 .products__title {
@@ -286,10 +275,10 @@ margin: 0 0 30px;
 }
 
 .footer {
-        background-image: url(./img/footer_backg.jpg);
-        background-size: cover;
-        height: 448px;
-    }
+    background-image: url(./img/footer_backg.jpg);
+    background-size: cover;
+    height: 448px;
+}
 
 .footer__list {
     height: 448px;
