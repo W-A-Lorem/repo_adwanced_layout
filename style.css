@@ -46,6 +46,11 @@
     
 }
 
+.header__logo:hover {
+    transform: scale(1.1);
+}
+
+
 
 .header__loupe-svg {
     fill: var(--white-for-svg);
@@ -53,6 +58,7 @@
 
 .header__loupe:hover .header__loupe-svg {
     fill: var(--dark-pink);
+    transform: scale(1.1);
 }
 
 .header__button {
@@ -81,10 +87,19 @@
     z-index: 10;
 }  
 
-/*.header__button:hover +.brand-wrapper-overlay, 
-.header__button:focus +.brand-wrapper-overlay {
+/*.brand-wrapper-overlay {
+    width: 100%;
+    height: 100%;
+    fill: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: none;
+}
+
+.brand-wrapper-overlay:hover .brand-wrapper-overlay, 
+.brand-wrapper-overlay:focus .brand-wrapper-overlay {
     display: block;
-}  */
+}  /*/
 
 
 .header__navigation-title {
@@ -169,14 +184,7 @@
     position: relative;
 }
 
-.brand-wrapper-overlay {
-    width: 100%;
-    height: 100%;
-    fill: solid;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    display: none;
-}
+
 
 .brand_image{
     display: flex;
@@ -387,7 +395,13 @@ padding-top: 97px;
 }
 
 .browse_button {
-
+    width: 211px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF6A6A;
+    margin: 18px 0 96px;
 }
 
 .browse_link {
@@ -460,7 +474,7 @@ padding-top: 97px;
 }
 
 .pros__item-svg-truck-box:hover {
-    width: 48px;;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -481,7 +495,7 @@ padding-top: 97px;
 }
 
 .pros__item-svg-discount-box:hover {
-    width: 42px;;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -502,7 +516,7 @@ padding-top: 97px;
 }
 
 .pros__item-svg-crown-box:hover {
-    width: 50px;;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
