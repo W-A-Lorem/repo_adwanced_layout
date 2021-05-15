@@ -283,21 +283,21 @@
 }
 
 .stocks__item_woman {
-    background-image: url(./img/women_for_women.jpg);
+    background-image: url(../img/women_for_women.jpg);
 }
 
 .stocks__item_man {
-    background-image: url(./img/man_for_man.jpg);
+    background-image: url(../img/man_for_man.jpg);
 }
 
 .stocks__item_kids {
-    background-image: url(./img/kid_for_kids.jpg);
+    background-image: url(../img/kid_for_kids.jpg);
 }
 
 .stocks__item_accessories {
     width: 100%;
     margin: 0;
-    background-image: url(./img/accesories.png);
+    background-image: url(../img/accesories.png);
 }
 
 .products__title {
@@ -550,7 +550,7 @@ padding-top: 97px;
 
 
 .footer {
-    background-image: url(./img/fotter_foto.png);
+    background-image: url(../img/fotter_foto.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 448px;
@@ -830,7 +830,7 @@ padding-top: 97px;
     position: absolute;
     height: 22px;
     width: 26px;
-    background: url(./img/mark.svg);
+    background: url(../img/mark.svg);
     background-size: 75%;
     background-repeat: no-repeat;
     left: 0;
