@@ -1,0 +1,53 @@
+.stocks__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stocks__item {
+    width: 360px;
+    min-height: 260px;
+    background-color: var(--brown);
+    margin: 0 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stocks__link{
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.stocks__first-line-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.stocks__second-line-text{
+    text-transform: uppercase;
+    color: var(--dark-pink);
+    
+}
+
+.stocks__item_woman {
+    background-image: url(../img/women_for_women.jpg);
+}
+
+.stocks__item_man {
+    background-image: url(../img/man_for_man.jpg);
+}
+
+.stocks__item_kids {
+    background-image: url(../img/kid_for_kids.jpg);
+}
+
+.stocks__item_accessories {
+    width: 100%;
+    margin: 0;
+    background-image: url(../img/accesories.png);
+}
