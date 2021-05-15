@@ -1,3 +1,4 @@
+
 :root {
     --black-color: #222222;
     --pink-color: #F1E4E6;
@@ -8,7 +9,6 @@
     --grey-text: #9F9F9F;
     --white-for-svg: #E8E8E8;
 }
-
 .body {
     font-family: Lato;
     font-size: 16px;
