@@ -97,10 +97,43 @@
         </section>
         <section class="registration-form">
             <div class="registration-form__wrapper container">
-                <div class="registration-form__details"></div>
+                <div class="registration-form__details">
+                    <form action="" class="registration-form__details-form">
+                        <fieldset class="registration-form__details-fieldset">
+                            <legend class="registration-form__details-legent">your name</legend>
+                            <div class="registration-form__details-input-box">
+                                <div>
+                                    <input type="text" placeholder="first name" >
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="last name" >
+                                </div>
+                                <div>
+                                    <input type="radio" id="" name="registration-form__radio" >
+                                    <label for="">male</label>
+                                    <input type="radio" id="" name="registration-form__radio" >
+                                    <label for="">female</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="registration-form__details-fieldset">
+                            <legend class="registration-form__details-legent">login details</legend>
+                            <div class="registration-form__details-input-box">
+                                <div>
+                                    <input type="text" placeholder="email" >
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="password" >
+                                </div>
+                                <p></p>
+                            </div>
+                        </fieldset>
+                        <button></button>
+                    </form>
+                </div>
                 <div class="registration-form__loyalty">
                     <div class="registration-form__loyalty-title">loyalti yas its perks</div>
-                    <div class="registration-form__loyalty-subtitle">get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</div>
+                    <div class="registration-form__loyalty-subtitle">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</div>
                     <div>
                         <ul class="registration-form__loyalty-list">
                             <li class="registration-form__loyalty-items">15% off welcome offer
@@ -128,8 +161,14 @@
             <li class="footer__subscribe">
                 <h2 class="footer__subscribe-title">subscribe</h2>
                 <p class="footer__subscribe-text">for our newletter and promotion</p>
-                <form action="">subscribe</form>
+                <form action="#">
+                    <div class="footer__form-wrapper">
+                        <input type="text" class="footer__form-input" placeholder="enter your email">
+                        <button class="footer__form-button">subscribe</button>
+                    </div>
+                </form>
             </li>
+            
         </ul>
         <section class="info">
             <div class="info__block container">
