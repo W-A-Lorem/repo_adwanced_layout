@@ -90,3 +90,24 @@
 .brand__subtitle-pink {
     color: $dark-pink;
 }
+
+
+@media (max-width: $max-tablet-widht) {
+    .brand__image {
+        width: 385px;
+        height: 369px;
+    }
+
+}
+
+@media (max-width: $max-mobile-widht) {
+    .brand__image {
+        display: none;
+    }
+
+    .brand__title-wrapper {
+        display: flex;  
+        justify-content: space-around;
+        height: 363px;
+    }
+}

@@ -46,8 +46,45 @@
     background-image: url(../img/kid_for_kids.jpg);
 }
 
-.stocks__item_accessories {
+.stocks__item-accessories {
     width: 100%;
     margin: 0;
     background-image: url(../img/accesories.png);
+}
+
+
+
+
+@media (max-width: $max-tablet-widht) {
+    .stocks__item  {
+        width: 232px;
+        height: 167px;
+    }
+
+    .stocks__item-accessories {
+        width: 734px;
+        height: 116px;
+        background-size: cover;
+    }
+
+}
+
+@media (max-width: $max-mobile-widht) {
+    .stocks__item  {
+        width: 343px;
+        height: 247px;
+    }
+
+    .stocks__list {
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        flex-wrap: wrap;
+
+    }
+
+    .stocks__item_accessories {
+        word-wrap: 343px;
+        height: 111px;
+    }
 }

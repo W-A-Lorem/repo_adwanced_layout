@@ -157,6 +157,18 @@ table {
   clip: rect(0 0 0 0);
 }
 
+@media (max-width: 1599px) {
+  .container {
+    width: 736px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 375px;
+  }
+}
+
 .header {
   background-color: #222222;
   display: flex;
@@ -305,6 +317,24 @@ table {
   fill: #F16D7F;
 }
 
+@media (max-width: 1599px) {
+  .header__registration {
+    margin: 0 25px 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__registration {
+    display: none;
+  }
+  .header__cart {
+    display: none;
+  }
+  .header__button {
+    margin: 0 16px 0 0;
+  }
+}
+
 .brand {
   display: flex;
   margin: 0 0 63px;
@@ -392,6 +422,24 @@ table {
   color: #F16D7F;
 }
 
+@media (max-width: 1599px) {
+  .brand__image {
+    width: 385px;
+    height: 369px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand__image {
+    display: none;
+  }
+  .brand__title-wrapper {
+    display: flex;
+    justify-content: space-around;
+    height: 363px;
+  }
+}
+
 .stocks__list {
   display: flex;
   flex-wrap: wrap;
@@ -440,10 +488,39 @@ table {
   background-image: url(../img/kid_for_kids.jpg);
 }
 
-.stocks__item_accessories {
+.stocks__item-accessories {
   width: 100%;
   margin: 0;
   background-image: url(../img/accesories.png);
+}
+
+@media (max-width: 1599px) {
+  .stocks__item {
+    width: 232px;
+    height: 167px;
+  }
+  .stocks__item-accessories {
+    width: 734px;
+    height: 116px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  .stocks__item {
+    width: 343px;
+    height: 247px;
+  }
+  .stocks__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .stocks__item_accessories {
+    word-wrap: 343px;
+    height: 111px;
+  }
 }
 
 .products__title {
@@ -691,6 +768,27 @@ table {
   cursor: pointer;
 }
 
+@media (max-width: 1599px) {
+  .pros {
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+  .pros__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 375px;
+  }
+  .pros__text {
+    display: block;
+    align-items: center;
+    color: #FBFBFB;
+    text-align: center;
+  }
+}
+
 .footer {
   background-image: url(../img/fotter_foto.png);
   background-size: cover;
@@ -846,6 +944,48 @@ table {
 .social__twit-backg:hover + .social__twit-logo, .social__twit-logo:hover {
   fill: #F16D7F;
   cursor: pointer;
+}
+
+@media (max-width: 1599px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer__list {
+    height: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer__face {
+    margin: 0;
+    padding: 0;
+  }
+  .footer__subscribe {
+    margin: 0;
+  }
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__subscribe-title {
+    padding-top: 50px;
+  }
+  .info__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .info__text {
+    margin-top: 40px;
+  }
 }
 
 .registration {
@@ -1091,7 +1231,7 @@ table {
   width: 43px;
   height: 24px;
   right: 24px;
-  top: 2px;
+  top: -1px;
   border: 1px solid #EAEAEA;
   position: absolute;
 }

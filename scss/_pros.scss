@@ -93,3 +93,34 @@
     transform: scale(1.1);
     cursor: pointer;
 }
+
+
+
+@media (max-width: $max-tablet-widht) {
+
+    .pros {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+    .pros__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 375px;
+        
+    }
+
+    .pros__text {
+        display: block;
+        align-items: center;
+        color: #FBFBFB;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: $max-mobile-widht) {
+
+}

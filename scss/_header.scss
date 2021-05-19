@@ -153,3 +153,24 @@
 .header__cart:hover .header__cart-svg {
     fill: $dark-pink;
 }
+
+@media (max-width: $max-tablet-widht) {
+    .header__registration {
+        margin: 0 25px 0 0;
+    }
+}
+
+@media (max-width: $max-mobile-widht) {
+    .header__registration {
+        display: none;
+    }
+    .header__cart {
+        display: none;
+    }
+
+    .header__button {
+        margin: 0 16px 0 0;
+
+    }
+}
+
