@@ -3,13 +3,14 @@
     justify-content: space-between;
     padding: 96px 0 128px;
 
-    &__card-box {
+    &__box-for-card {
     display: flex;
     flex-direction: column;
     width: 682px;
     }    
 
     &__card {
+        position: relative;
         display: flex;
         height: 306px;
         width: 682px;
@@ -18,42 +19,180 @@
         box-sizing: border-box;
     }
 
-    &__foto {
+    &__card::after {
+        content: '';
+        width: 18px;
+        height: 18px;
+        right: 22px;
+        top: 28px;
+        background-image: url(../img/closer.svg);
+        background-size: cover;
+        position: absolute;
+    }
+
+    &__card-foto {
         width: 262px;
-        height: 306px;
+        height: 100%;
     }
 
     &__order-details-box {
-        margin: 22px 0 0 31px ;
-    }
-
-    &__card-button {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        margin: 22px 0 0 31px ;
+        
     }
 
     &__order-details-title {
+        text-transform: uppercase;
+        width: 200px;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 400;
         padding-bottom: 42px;
     }
 
     &__order-details-point {
+        text-transform: capitalize;
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 400;
         padding-bottom: 6px;
     }
 
+    &__pink-price {
+        color: $dark-pink;
+    }
+
+    &__order-details-quantity {
+        position: relative;
+    }
+
+    &__order-details-quantity::after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: '2';
+        width: 43px;
+        height: 24px;
+        right: 24px;
+        top: 2px;
+        border: 1px solid #EAEAEA;
+        position: absolute;
+    }
+
+    &__card-button-box {
+        padding: 32px 0 0;
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    &__card-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 300;
+        padding: 16px 38px;
+        border: 1px solid #A4A4A4;
+    }
 
 
+    &__form-legent {
+        text-transform: uppercase;
+    }
 
+    &__form-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 300;
+        padding: 10px 15px;
+        background-color: transparent;
+        border: 1px solid #A4A4A4;
+        margin: 0 0 58px;
+    }
 
+    &__form-link {
+        color: #4A4A4A;
+    }
 
-
-
-    &__form-perseed-box {
+    &__form-total-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-
+        align-items: flex-end;
+        width: 360px;
+        height: 214px;
+        background-color: #F5F3F3;
+        padding: 40px 34px;
     }
+
+    &__form-sub-total-text {
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #4A4A4A;
+        margin: 0 0 12px;
+    }
+
+    &__form-sub-total-price {
+        margin-left: 20px;
+    }
+
+    &__form-grand-total-text {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #4A4A4A;
+        margin: 0 0 20px;
+    }
+
+    &__form-total-box-line {
+        width: 273px;
+        height: 1px;
+        background-color: #E2E2E2;
+        margin: 0 0 20px;
+    }
+
+    &__form-total-button {
+        width: 273px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FF6A6A;
+        background-color: $dark-pink;
+    }
+    
+    &__form-total-link {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
