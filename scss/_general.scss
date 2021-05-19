@@ -1,0 +1,33 @@
+
+.body {
+    font-family: Lato;
+    @include font();
+}
+
+.container {
+    width: 1138px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+@media (max-width: $max-tablet-widht) {
+    .container {
+        width: 736px;
+    }
+}
+
+@media (max-width: $max-mobile-widht) {
+    .container {
+        width: 375px;
+    }
+}

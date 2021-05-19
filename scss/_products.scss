@@ -1,0 +1,154 @@
+.products {
+
+    &__title {
+        @include font(30px, 36px, 400);
+        margin: 0 0 6px;
+        padding-top: 97px;
+        }
+        
+    &__parag{
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey-text;
+        margin: 0 0 48px;
+    }
+    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 97px 0 0 ;
+    }
+    
+    &__list{
+        @include flex-space-beetwen-center();
+        flex-wrap:wrap;
+        
+    }
+    
+    &__item{
+        width: 360px;
+        margin: 0 0 30px;
+    }
+    
+    &__item-wrapper {
+        position: relative;
+    }
+    
+    &__item-img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(58, 56, 56, 0.86);
+        top: 0;
+        display: none;
+    }
+    
+    &__overlay-button {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        width: 148px;
+        height: 43px;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1);
+        display: none;
+    }
+    
+    &__item-svg {
+        width: 25px;
+        height: 25px;
+    }
+    
+    &__item-wrapper:hover &__overlay,
+    &__item-wrapper:hover &__overlay-button {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    &__item-wrapper:hover &__overlay-button {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    
+    &__item-text{
+        margin-top: -5px;
+        padding: 18px 24px 20px;
+        background-color: $grey-bg;
+    }
+    
+    &__subtitle {
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $black-color;
+        margin: 0 0 12px;
+    }
+    
+    &__text{
+        color: #5D5D5D;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0 0 18px;
+    }
+    
+    &__price{
+        color: $dark-pink;
+        margin: 0 0 14px;
+    }
+    }
+    
+    
+
+    .browse {
+
+    &__box {
+        display: flex;
+        justify-content: center; 
+    }
+    
+    &__button {
+        width: 211px;
+        height: 47px;
+        @include flex-center-center;
+        border: 1px solid #FF6A6A;
+        margin: 18px 0 96px;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: $dark-pink;
+        margin: auto;
+        align-self: center;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    
+    &__button:hover {
+        background-color: $dark-pink;
+    }
+    
+    &__button:hover &__link {
+        color: white;
+    }
+    }
+    
+    
+    

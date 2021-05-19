@@ -1,0 +1,126 @@
+.pros {
+    background-color: $black-color;
+    height: 341px;
+    }
+
+.pros__list {
+    height: 341px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.pros__item {
+    width: 345px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.pros__title {
+    color: #FBFBFB;
+}
+
+.pros__text {
+    display: block;
+    align-items: center;
+    color: #FBFBFB;
+    text-align: center;
+}
+
+.pros__item-svg-truck-box {
+    width: 46px;
+    height: 32px;;
+    cursor: pointer;
+}
+.pros__item-svg-truck {
+    fill: #F16D7F;
+    cursor: pointer;
+}
+
+.pros__item-svg-truck-box:hover .pros__item-svg-truck{
+    fill: #f15f73;
+    cursor: pointer;
+}
+
+.pros__item-svg-truck-box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.pros__item-svg-discount-box {
+    width: 40px;
+    height: 40px;;
+    cursor: pointer;
+}
+.pros__item-svg-discount {
+    fill: #F16D7F;
+    cursor: pointer;
+}
+
+.pros__item-svg-discount-box:hover .pros__item-svg-discount{
+    fill: #f15f73;
+    cursor: pointer;
+}
+
+.pros__item-svg-discount-box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.pros__item-svg-crown-box {
+    width: 48px;
+    height: 35px;;
+    cursor: pointer;
+}
+.pros__item-svg-crown {
+    fill: #F16D7F;
+    cursor: pointer;
+}
+
+.pros__item-svg-crown-box:hover .pros__item-svg-crown{
+    fill: #f15f73;
+    cursor: pointer;
+}
+
+.pros__item-svg-crown-box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+@media (max-width: $max-tablet-widht) {
+
+    .pros {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+    .pros__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 375px;
+        
+    }
+
+    .pros__text {
+        display: block;
+        align-items: center;
+        color: #FBFBFB;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: $max-mobile-widht) {
+
+}

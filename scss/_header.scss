@@ -1,0 +1,176 @@
+.header {
+    background-color: $black-color;
+    display: flex;
+
+    
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    
+}
+
+.header__logo:hover {
+    transform: scale(1.1);
+}
+
+.header__loupe-svg {
+    fill: $white-for-svg;
+}
+
+.header__loupe:hover .header__loupe-svg {
+    fill: $dark-pink;
+    transform: scale(1.1);
+}
+
+.header__button {
+    border: none;
+    background-color: transparent;
+    margin: 0 34px 0 0;
+    position: relative;
+}
+
+.header__navigation {
+    display: flex;
+    box-sizing: border-box;
+    min-width: 260px;
+    height: 766px;
+    padding: 37px 0 0 34px;
+    position: absolute;
+    top: 51px;
+    left: 187px;
+    background: white;
+    box-shadow: 0px 16px 14px 6px rgba(34, 60, 80, 0.2);
+    display: none;
+}
+
+.header__button:hover .header__navigation, 
+.header__button:focus .header__navigation {
+    display: block;
+    z-index: 10;
+}  
+
+/*.brand-wrapper-overlay {
+    width: 100%;
+    height: 100%;
+    fill: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: none;
+}
+
+.brand-wrapper-overlay:hover .brand-wrapper-overlay, 
+.brand-wrapper-overlay:focus .brand-wrapper-overlay {
+    display: block;
+}  /*/
+
+
+.header__navigation-title {
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    }
+
+.navigation-item__link {
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 24px 0 12px 0;
+    color: $dark-pink;
+    
+}
+
+.navigation-item__sublist-link {
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    margin: 0 0 12px 22px;
+    text-decoration: none;
+    color: #6F6E6E;
+}
+
+
+.burger {
+    fill: $white-for-svg;
+    cursor: pointer;
+    }
+
+.header__button:hover .burger,
+.header__button:hover .burger,
+.header__button:active .burger {
+    fill: $dark-pink;
+}  
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__registration {
+    margin: 0 34px 0 0;
+}
+
+.header__registration-svg {
+    fill: $white-for-svg;
+}
+
+.header__registration:hover .header__registration-svg {
+    fill: $dark-pink;
+}
+
+.header__cart {
+    position: relative;
+
+}
+
+.header__cart:after {
+    content: '5';
+    color: $white;
+    width: 20px;
+    height:20px;
+    border-radius: 15px;
+    background: $dark-pink;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+    right: -12px;
+}
+
+.header__cart-svg {
+    position: relative;
+    fill: $white-for-svg;
+}
+
+.header__cart:hover .header__cart-svg {
+    fill: $dark-pink;
+}
+
+@media (max-width: $max-tablet-widht) {
+    .header__registration {
+        margin: 0 25px 0 0;
+    }
+}
+
+@media (max-width: $max-mobile-widht) {
+    .header__registration {
+        display: none;
+    }
+    .header__cart {
+        display: none;
+    }
+
+    .header__button {
+        margin: 0 16px 0 0;
+
+    }
+}
+
