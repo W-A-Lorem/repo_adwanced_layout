@@ -113,8 +113,6 @@
     }
     }
     
-    
-
     .browse {
 
     &__box {
@@ -148,6 +146,24 @@
     &__button:hover &__link {
         color: white;
     }
+    }
+
+
+    @media (max-width: $max-tablet-widht) {
+        .products {
+            &__item{
+                width: 49%;
+            }
+        }
+    
+    }
+    
+    @media (max-width: $max-mobile-widht) {
+        .products {
+            &__item{
+                width: 100%;
+            }
+        }
     }
     
     

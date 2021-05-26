@@ -5,8 +5,9 @@
 }
 
 .container {
-    width: 1138px;
+    width: 71%;
     margin: 0 auto;
+    align-items: center;
 }
 
 .visually-hidden {
@@ -22,12 +23,12 @@
 
 @media (max-width: $max-tablet-widht) {
     .container {
-        width: 736px;
+        width: 96%;
     }
 }
 
 @media (max-width: $max-mobile-widht) {
     .container {
-        width: 375px;
+        width: 92%;
     }
 }

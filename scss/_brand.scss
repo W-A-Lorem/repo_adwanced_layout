@@ -94,8 +94,27 @@
 
 @media (max-width: $max-tablet-widht) {
     .brand__image {
-        width: 385px;
-        height: 369px;
+        width: 50%;
+        height: auto;
+    }
+
+    .brand__title-wrapper {
+        padding: 0 0 0 68px;
+    }
+
+    .brand__title {
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 52px;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .brand__subtitle {
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
     }
 
 }
@@ -107,7 +126,23 @@
 
     .brand__title-wrapper {
         display: flex;  
+        padding: 0 0 0 83px;
         justify-content: space-around;
         height: 363px;
+    }
+
+    .brand__title {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 45px;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .brand__subtitle {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
     }
 }
