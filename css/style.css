@@ -142,8 +142,9 @@ table {
 }
 
 .container {
-  width: 1138px;
+  width: 71%;
   margin: 0 auto;
+  align-items: center;
 }
 
 .visually-hidden {
@@ -159,13 +160,13 @@ table {
 
 @media (max-width: 1599px) {
   .container {
-    width: 736px;
+    width: 96%;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    width: 375px;
+    width: 92%;
   }
 }
 
@@ -424,8 +425,24 @@ table {
 
 @media (max-width: 1599px) {
   .brand__image {
-    width: 385px;
-    height: 369px;
+    width: 50%;
+    height: auto;
+  }
+  .brand__title-wrapper {
+    padding: 0 0 0 68px;
+  }
+  .brand__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 52px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .brand__subtitle {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
   }
 }
 
@@ -435,8 +452,22 @@ table {
   }
   .brand__title-wrapper {
     display: flex;
+    padding: 0 0 0 83px;
     justify-content: space-around;
     height: 363px;
+  }
+  .brand__title {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 45px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .brand__subtitle {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
   }
 }
 
@@ -447,13 +478,14 @@ table {
 }
 
 .stocks__item {
-  width: 360px;
+  width: 31%;
   min-height: 260px;
   background-color: #867276;
   margin: 0 0 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
 
 .stocks__link {
@@ -496,11 +528,9 @@ table {
 
 @media (max-width: 1599px) {
   .stocks__item {
-    width: 232px;
     height: 167px;
   }
   .stocks__item-accessories {
-    width: 734px;
     height: 116px;
     background-size: cover;
   }
@@ -508,7 +538,7 @@ table {
 
 @media (max-width: 767px) {
   .stocks__item {
-    width: 343px;
+    width: 100%;
     height: 247px;
   }
   .stocks__list {
@@ -672,6 +702,18 @@ table {
   color: white;
 }
 
+@media (max-width: 1599px) {
+  .products__item {
+    width: 49%;
+  }
+}
+
+@media (max-width: 767px) {
+  .products__item {
+    width: 100%;
+  }
+}
+
 .pros {
   background-color: #222222;
   height: 341px;
@@ -773,6 +815,9 @@ table {
     height: 100%;
     padding-top: 50px;
     padding-bottom: 150px;
+  }
+  .pros__item {
+    padding-top: 15px;
   }
   .pros__list {
     display: flex;
@@ -985,6 +1030,7 @@ table {
   }
   .info__text {
     margin-top: 40px;
+    margin-bottom: 30px;
   }
 }
 
