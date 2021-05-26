@@ -1384,4 +1384,33 @@ table {
   font-weight: 300;
   text-transform: uppercase;
 }
+
+.product__slide {
+  height: 300px;
+  background-color: yellowgreen;
+}
+
+.product__slide-info {
+  height: 300px;
+  background-color: lightblue;
+}
+
+.product__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__grey-text {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #9F9F9F;
+}
+
+.product__pink-text {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #F16D7F;
+}
 /*# sourceMappingURL=style.css.map */
